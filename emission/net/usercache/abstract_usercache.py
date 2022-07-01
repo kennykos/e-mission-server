@@ -1,24 +1,3 @@
-from __future__ import unicode_literals
-from __future__ import print_function
-from __future__ import division
-from __future__ import absolute_import
-# The server side implementation of the user cache
-
-# This is an abstract superclass that can be implemented with couchbase, azure,
-# or our builtin solution.
-
-# Note also that this is the interface between the user cache and the rest of the code
-# The REST interface between the rest of the code and this cache is in
-# CFC_WebApp, consistent with the rest of our philosophy 
-
-# If a different sync mechanism such as couchbase or azure is being used, then
-# the communication between the phone and the server will happen through their
-# API, not our REST API. Separating the REST part from the integration with the
-# rest of the code (ha!) allows us to separate those concerns as well
-
-# Let's switch to new-style classes finally!!
-from future import standard_library
-standard_library.install_aliases()
 from builtins import *
 from builtins import object
 class UserCache(object):

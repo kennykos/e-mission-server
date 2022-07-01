@@ -1,3 +1,4 @@
+#!/bin/sh
 # 
 # Simple script to ensure that the pythonpath is set correctly before executing the command.
 # As we increase the number of directories that we need, this becomes useful.
