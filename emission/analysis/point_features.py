@@ -5,6 +5,12 @@ import numpy as np
 import emission.core.common as ec
 import emission.analysis.section_features as sf
 
+def old_div(a,b):
+    if type(a) is int and type(b) is int:
+        return a // b
+    else:
+        return a / b
+
 def calDistance(point1, point2):
     return ec.calDistance([point1.longitude, point1.latitude], [point2.longitude, point2.latitude])
 
