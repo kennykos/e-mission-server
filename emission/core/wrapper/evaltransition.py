@@ -11,6 +11,8 @@ class TransitionType(enum.Enum):
     STOP_EVALUATION_TRIP = 5
     ENTER_EVALUATION_STOP = 6
     LEAVE_EVALUATION_STOP = 7
+    START_EVALUATION_SECTION = 8
+    STOP_EVALUATION_SECTION = 9
 
 class Transition(ecwb.WrapperBase):
     props = {"transition": ecwb.WrapperBase.Access.RO,
